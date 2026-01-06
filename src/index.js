@@ -3,11 +3,10 @@ import { db_name } from "./constants.js";
 import express from "express"
 import connectToDB from "./db/index.js";
 import dotenv from "dotenv"
-
+import app from "./app.js";
 dotenv.config({
     path: './env'
 })
-const app = express()
 
 // ;(async () =>{
 //     try {

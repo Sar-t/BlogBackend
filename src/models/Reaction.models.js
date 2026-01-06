@@ -17,6 +17,6 @@ const reactionSchema = new Schema({
 },{
     timestamps: true
 })
-reactionSchema.index({ blogId: 1, userId: 1 }, { unique: true });
+reactionSchema.index({ blogId: 1, reactedBy: 1 }, { unique: true });
 
 export const Reaction = mongoose.model("Reaction", reactionSchema);
