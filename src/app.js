@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({
     origin: [
         'https://blog-web-application-main.vercel.app',
-        'http://localhost:5174',
+        'http://localhost:5173',
     ],
     credentials: true,
 }));
